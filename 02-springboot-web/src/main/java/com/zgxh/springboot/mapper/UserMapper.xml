@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zgxh.springboot.mapper.MemberInfoMapper">
-  
-  <resultMap id="BaseResultMap" type="com.zgxh.springboot.model.MemberInfo">
+<mapper namespace="com.zgxh.springboot.mapper.UserMapper">
+
+  <!--返回结果映射，把user映射-->
+  <resultMap id="BaseResultMap" type="com.zgxh.springboot.model.User">
+    <result column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="age" jdbcType="INTEGER" property="age" />
     <result column="address" jdbcType="VARCHAR" property="address" />
@@ -10,26 +12,37 @@
   </resultMap>
 
   <sql id="Base_Column_List">
-    name, age, address, tel
+    id, name, age, address, tel
   </sql>
 
-  <!--查询所有成员信息-->
-  <select id="getAllMembers" resultMap="BaseResultMap">
-    select
+  <!--查询所有user-->
+  <select id="selectAllUsers" resultMap="BaseResultMap">
+    select 
     <include refid="Base_Column_List"></include>
     from 303member
   </select>
-  
-  <insert id="insert" parameterType="com.zgxh.springboot.model.MemberInfo">
-    insert into 303member (name, age, address, 
-      tel)
-    values (#{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}, 
-      #{tel,jdbcType=VARCHAR})
+
+  <!--按id查询user-->
+  <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"></include>
+    from 303member
+    where id=#{id,jdbcType=INTEGER}
+  </select>
+
+  <insert id="insert" parameterType="com.zgxh.springboot.model.User">
+    insert into 303member (id, name, age, 
+      address, tel)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, 
+      #{address,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR})
   </insert>
-  
-  <insert id="insertSelective" parameterType="com.zgxh.springboot.model.MemberInfo">
+
+  <insert id="insertSelective" parameterType="com.zgxh.springboot.model.User">
     insert into 303member
     <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
       <if test="name != null">
         name,
       </if>
@@ -44,6 +57,9 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
       </if>
@@ -58,5 +74,5 @@
       </if>
     </trim>
   </insert>
-  
+
 </mapper>

@@ -1,19 +1,21 @@
 package com.zgxh.springboot.model;
 
-/**
- * @author Yu Yang
- * @create 2020-02-18 15:30
- */
 public class User {
+    private Integer id;
 
-    private int id;
     private String name;
 
-    public int getId() {
+    private Integer age;
+
+    private String address;
+
+    private String tel;
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -22,6 +24,30 @@ public class User {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address == null ? null : address.trim();
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel == null ? null : tel.trim();
     }
 }
