@@ -20,4 +20,10 @@ public class MybatisController {
     public Object member() {
         return userService.selectAllUsers();
     }
+
+    @GetMapping(value = "/ajax/user.json", consumes = "application/json") // consumes参数对应HTTP请求的Content-type，使用curl命令测试成功
+    public Object ajaxGetUser() {
+        return userService.selectById(1);
+    }
+
 }
