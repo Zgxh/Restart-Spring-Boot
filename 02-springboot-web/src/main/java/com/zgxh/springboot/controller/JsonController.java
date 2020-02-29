@@ -3,6 +3,10 @@ package com.zgxh.springboot.controller;
 import com.zgxh.springboot.model.User;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author Yu Yang
  * @create 2020-02-17 20:01
@@ -33,4 +37,11 @@ public class JsonController {
         return user.getName();
     }
 
+    // 测试用@Configuration改变序列化日期的格式
+    @GetMapping("/date.json")
+    public Map getDate() {
+        Map map = new HashMap();
+        map.put("time", new Date());
+        return map;
+    }
 }

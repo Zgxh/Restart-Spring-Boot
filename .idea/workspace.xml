@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f1277be-0caf-4b97-bb3d-0c040fda2f50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/config/JacksonConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/JsonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/MybatisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/MybatisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-springboot-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/02-springboot-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/JsonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/JsonController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/02-springboot-web/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
-              <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+              <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -53,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/ViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
+            <state relative-caret-position="550">
               <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,37 +63,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/JsonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+            <state relative-caret-position="357">
+              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/MybatisController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#904#905#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/PostController.java">
+        <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/config/JacksonConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+            <state relative-caret-position="330">
+              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,9 +127,10 @@
         <option value="$PROJECT_DIR$/02-springboot-web/src/main/webapp/userViewTest.jsp" />
         <option value="$PROJECT_DIR$/02-springboot-web/src/main/resources/static/ajax.html" />
         <option value="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/MybatisController.java" />
-        <option value="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/JsonController.java" />
         <option value="$PROJECT_DIR$/02-springboot-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/PostController.java" />
+        <option value="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/JsonController.java" />
+        <option value="$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/config/JacksonConfig.java" />
       </list>
     </option>
   </component>
@@ -201,8 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -410,6 +392,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,7 +472,8 @@
       <workItem from="1582685867791" duration="5666000" />
       <workItem from="1582691579955" duration="4088000" />
       <workItem from="1582706562432" duration="21000" />
-      <workItem from="1582786399399" duration="6776000" />
+      <workItem from="1582786399399" duration="8940000" />
+      <workItem from="1582943225873" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="Relearn spring boot: day01">
       <created>1581942431089</created>
@@ -518,17 +503,24 @@
       <option name="project" value="LOCAL" />
       <updated>1582699754203</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="curl测试post，postman测试文件上传">
+      <created>1582793416822</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582793416822</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40322000" />
+    <option name="totallyTimeSpent" value="43087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1991" y="-152" width="1984" height="1166" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990099" visible="true" weight="0.22377986" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990099" visible="true" weight="0.22585669" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -571,7 +563,8 @@
     <MESSAGE value="JSP-related" />
     <MESSAGE value="add mysql, mapper generator, mapper.xml" />
     <MESSAGE value="利用ModelAndView重定向视图并传递信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="利用ModelAndView重定向视图并传递信息" />
+    <MESSAGE value="curl测试post，postman测试文件上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="curl测试post，postman测试文件上传" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Restart_Spring_Boot$Application.ic" NAME="Application Coverage Results" MODIFIED="1582691426962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -714,6 +707,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/resources/static/ajax.html" />
     <entry file="file://$PROJECT_DIR$/02-springboot-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2596">
@@ -721,9 +715,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/ViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
+        <state relative-caret-position="550">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -731,34 +732,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/JsonController.java">
+    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/PostController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+        <state relative-caret-position="771">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/resources/static/ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/MybatisController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="40" />
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#570#571#0" expanded="true" />
             <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -773,17 +764,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/JsonController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="65" lean-forward="true" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+        <state relative-caret-position="357">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/controller/PostController.java">
+    <entry file="file://$PROJECT_DIR$/02-springboot-web/src/main/java/com/zgxh/springboot/config/JacksonConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="36" column="64" lean-forward="true" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+        <state relative-caret-position="330">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
