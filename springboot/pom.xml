@@ -78,6 +78,13 @@
         </dependency>
         <!--mybatis整合到spring boot的相关依赖-->
 
+        <!--beetl模板引擎-->
+        <dependency>
+            <groupId>com.ibeetl</groupId>
+            <artifactId>beetl-framework-starter</artifactId>
+            <version>1.1.15.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <build>
