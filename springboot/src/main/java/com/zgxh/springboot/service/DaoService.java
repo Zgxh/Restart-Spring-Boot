@@ -18,4 +18,6 @@ public interface DaoService {
     List<User> selectAllUsers();
 
     int insertUser(User user);
+
+    User updateUser(User user);
 }

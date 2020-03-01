@@ -29,6 +29,11 @@ public class DaoServiceImpl implements DaoService {
     }
 
     @Override
+    public User updateUser(User user) {
+        return userDao.updateUser(user);
+    }
+
+    @Override
     public int insertUser(User user) {
         return userDao.insertUser(user);
     }

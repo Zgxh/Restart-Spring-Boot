@@ -1,12 +1,16 @@
 package com.zgxh.springboot.dao;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.zgxh.springboot.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -52,10 +56,28 @@ public class UserDao {
         return jdbcTemplate.query(sql, new UserRowMapper());
     }
 
-    // 添加用户,并返回当前人数
+    // 添加用户,并返回自增长的主键
     public int insertUser(final User user) {
-        String sql = "insert into 303member values (?,?,?,?,?)";
-        jdbcTemplate.update(sql, user.getId(), user.getName(), user.getAge(), user.getAddress(), user.getTel());
-        return getUserNum();
+        String sql = "insert into 303member (name, age, address, tel) values (?,?,?,?)";
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        jdbcTemplate.update(new PreparedStatementCreator() {
+            @Override
+            public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+                PreparedStatement preparedStatement = connection.prepareStatement(sql, new String[]{"id"}); // 自增主键的列名
+                preparedStatement.setString(1, user.getName());
+                preparedStatement.setInt(2, user.getAge());
+                preparedStatement.setString(3, user.getAddress());
+                preparedStatement.setString(4, user.getTel());
+                return preparedStatement;
+            }
+        }, keyHolder);
+        return keyHolder.getKey().intValue(); // 返回自增长的主键，返回值类型需要人为转换
+    }
+
+    // 更新用户信息
+    public User updateUser(final User user) {
+        String sql = "update 303member set name=?, tel=? where id=?";
+        jdbcTemplate.update(sql, user.getName(), user.getTel(), user.getId());
+        return selectUserById(user.getId());
     }
 }

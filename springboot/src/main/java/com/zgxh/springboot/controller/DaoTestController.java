@@ -44,6 +44,12 @@ public class DaoTestController {
     @PostMapping(value = "/insert.json")
     @ResponseBody
     public int insertUser(@RequestBody User user) { // 增加新用户，使用@RequestBody接受json映射到user上
-        return daoService.insertUser(user);
+        return daoService.insertUser(user); // 返回自增长的主键id
+    }
+
+    @PostMapping(value = "/update.json")
+    @ResponseBody
+    public User updateUser(@RequestBody User user) {
+        return daoService.updateUser(user);
     }
 }
