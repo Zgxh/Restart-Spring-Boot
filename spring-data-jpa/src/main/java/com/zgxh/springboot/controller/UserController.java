@@ -23,8 +23,8 @@ public class UserController {
 
     @RequestMapping(value = "/finduser/{id}")
     @ResponseBody
-    public User findUser(@PathVariable Integer id) {
-        return userService.findUserById(id);
+    public String findUser(@PathVariable Integer id) {
+        return userService.findUserById(id).getName();
     }
 
     @GetMapping(value = "/getuser/{name}/{deptid}")
@@ -33,7 +33,7 @@ public class UserController {
         return userService.findUser(name, departmentId);
     }
 
-    @PostMapping(value = "/addUser")
+    @PostMapping(value = "/adduser")
     @ResponseBody
     public String addUser(@RequestBody User user) {
         return userService.addUser(user).toString();
