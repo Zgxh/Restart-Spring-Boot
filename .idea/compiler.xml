@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot" />
+        <module name="json-and-ajax" />
         <module name="youdao-translate" />
         <module name="spring-data-jpa" />
         <module name="spring-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="json-and-ajax" target="1.8" />
       <module name="spring-data-jpa" target="1.8" />
       <module name="spring-security" target="1.8" />
       <module name="springboot" target="1.8" />
@@ -21,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="json-and-ajax" options="-parameters" />
       <module name="spring-data-jpa" options="-parameters" />
       <module name="spring-security" options="-parameters" />
       <module name="springboot" options="-parameters" />
