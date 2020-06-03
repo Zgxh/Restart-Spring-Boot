@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Restart-Spring-Boot.iml" filepath="$PROJECT_DIR$/.idea/Restart-Spring-Boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/json-and-ajax/json-and-ajax.iml" filepath="$PROJECT_DIR$/json-and-ajax/json-and-ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-base/spring-base.iml" filepath="$PROJECT_DIR$/spring-base/spring-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" filepath="$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-security/spring-security.iml" filepath="$PROJECT_DIR$/spring-security/spring-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
