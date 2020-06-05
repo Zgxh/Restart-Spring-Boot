@@ -39,4 +39,7 @@
 
     <!--FactoryBean, 在类实例被获取的时候才会创建该类实例。-->
     <bean id="myFactoryBean" class="com.zgxh.spring.factory.MyFactoryBeanImpl"></bean>
+
+    <!--Spring的自动装配，autowire-->
+    <bean id="laboratory2" class="com.zgxh.spring.bean.Laboratory" autowire="byName"></bean>
 </beans>

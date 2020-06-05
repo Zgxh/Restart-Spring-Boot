@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--引用外部文件中的数据 使用context，需要在namespace和schemaLocation中声明context包-->
+    <context:property-placeholder location="./conf/dbconfig.properties"/>
+
+    <bean id="person" class="com.zgxh.spring.bean.Person">
+        <property name="name" value="${name}"/>
+        <!--username是spring中的一个关键字，当引用的外部变量是username时，即${username}，会默认为自己的电脑用户名-->
+        <!--这种取外部变量的写法与jsp的EL表达式类似，但不是EL表达式-->
+    </bean>
+</beans>
