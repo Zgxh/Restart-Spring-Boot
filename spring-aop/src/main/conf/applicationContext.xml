@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--包扫描开启-->
+    <context:component-scan base-package="com.zgxh"></context:component-scan>
+
+    <!--
+    开启基于【注解】的AOP功能：
+    通过注解把目标类和切面类都加入IoC容器；
+    然后开启切面类的切面功能，并使用五个通知注解来配置切面类的通知方法。
+    -->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <!--
+    什么时候使用基于配置.xml的AOP：
+    把比较重要的切面写在配置里面；
+    当有外界导入的jar包等时，需要用配置.xml文件来声明切面
+    -->
+</beans>

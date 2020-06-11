@@ -6,15 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-data-jpa" />
         <module name="springboot" />
+        <module name="spring-aop" />
+        <module name="spring-security" />
         <module name="json-and-ajax" />
         <module name="youdao-translate" />
-        <module name="spring-data-jpa" />
-        <module name="spring-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="json-and-ajax" target="1.8" />
+      <module name="spring-aop" target="1.7" />
       <module name="spring-data-jpa" target="1.8" />
       <module name="spring-security" target="1.8" />
       <module name="springboot" target="1.8" />

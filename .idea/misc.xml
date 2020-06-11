@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-aop" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -12,6 +15,7 @@
         <option value="$PROJECT_DIR$/spring-security/pom.xml" />
         <option value="$PROJECT_DIR$/youdao-translate/pom.xml" />
         <option value="$PROJECT_DIR$/json-and-ajax/pom.xml" />
+        <option value="$PROJECT_DIR$/maven-test/pom.xml" />
       </list>
     </option>
   </component>
